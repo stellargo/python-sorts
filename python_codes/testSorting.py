@@ -5,6 +5,7 @@ import bubbleSortR
 import insertionSort
 import insertionSortR
 import mergeSort
+import quickSort
 
 class Test( unittest.TestCase ):
 	def testSelectionSort( self ):
