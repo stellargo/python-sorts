@@ -1,2 +1,2 @@
 # python-sorts
-Implementations of various sorts in python
+Implementations of various sorting algorithms in python.
