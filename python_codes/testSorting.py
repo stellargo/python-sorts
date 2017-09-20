@@ -6,6 +6,7 @@ import insertionSort
 import insertionSortR
 import mergeSort
 import quickSort
+import countingSort
 
 class Test( unittest.TestCase ):
 	def testSelectionSort( self ):
@@ -56,5 +57,12 @@ class Test( unittest.TestCase ):
 		B = [0,1,3,5,10]
 		if (new!=B):
 			self.fail( "quickSort method fails." )
+
+	def testCountingSort(self):
+		A = [5,1,3,0,10]
+		new = countingSort.countingSort( A )
+		B = [0,1,3,5,10]
+		if (new!=B):
+			self.fail("countingSort method fails.")
 
 		
