@@ -9,7 +9,7 @@ def merge(array1,array2):
 		else:
 			array.append(array2[j])
 			j+=1
-	while (i<len(array1)):
+	while (i<len(array1))
 		array.append(array1[i])
 		i+=1
 	while (j<len(array2)):
