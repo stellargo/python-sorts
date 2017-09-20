@@ -7,6 +7,8 @@ import insertionSortR
 import mergeSort
 import quickSort
 import countingSort
+import radixSort
+import heapSort
 
 class Test( unittest.TestCase ):
 	def testSelectionSort( self ):
@@ -64,5 +66,19 @@ class Test( unittest.TestCase ):
 		B = [0,1,3,5,10]
 		if (new!=B):
 			self.fail("countingSort method fails.")
+
+	def testRadixSort(self):
+		A = [513,124,333,101,666]
+		new = radixSort.radixSort( A )
+		B = [101, 124, 333, 513, 666]
+		if (new!=B):
+			self.fail("radixSort method fails.")
+
+	def testHeapSort(self):
+		A = [5,1,3,0,10]
+		heapSort.heapSort( A )
+		B = [0,1,3,5,10]
+		if (A!=B):
+			self.fail("heapSort method fails.")
 
 		
