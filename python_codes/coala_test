@@ -1,0 +1,918 @@
+Users-MacBook-Pro:python_codes User$ coala
+[WARNING][17:27:28] 'cli' is an internally reserved section name. It may have been generated into your coafile while running coala with `--save`. The settings in that section will inherit implicitly to all sections as defaults just like CLI args do.Please change the name of that section in your coafile to avoid any unexpected behavior.
+Please enter a value for the setting "use_spaces" (True if spaces are to be used instead of tabs.) needed by SpaceConsistencyBear for section "cli": 
+False
+Executing section cli...
+
+insertionSort.py
+|   7| ····for·toputinplace·in·range(1,·len(array)):
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|   4|   4| 
+|   5|   5| 
+|   6|   6| def insertionSort(array):
+|   7|    |-    for toputinplace in range(1, len(array)):
+|    |   7|+	for toputinplace in range(1, len(array)):
+|   8|   8|         for traverse in range(toputinplace):
+|   9|   9|             if array[traverse] > array[toputinplace]:
+|  10|  10|                 temp = array[toputinplace]
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSort.py
+|   8| ········for·traverse·in·range(toputinplace):
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|   5|   5| 
+|   6|   6| def insertionSort(array):
+|   7|   7| 	for toputinplace in range(1, len(array)):
+|   8|    |-        for traverse in range(toputinplace):
+|    |   8|+		for traverse in range(toputinplace):
+|   9|   9|             if array[traverse] > array[toputinplace]:
+|  10|  10|                 temp = array[toputinplace]
+|  11|  11|                 for k in range(toputinplace, traverse, -1):
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSort.py
+|   9| ············if·array[traverse]·>·array[toputinplace]:
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|   6|   6| def insertionSort(array):
+|   7|   7| 	for toputinplace in range(1, len(array)):
+|   8|   8| 		for traverse in range(toputinplace):
+|   9|    |-            if array[traverse] > array[toputinplace]:
+|    |   9|+			if array[traverse] > array[toputinplace]:
+|  10|  10|                 temp = array[toputinplace]
+|  11|  11|                 for k in range(toputinplace, traverse, -1):
+|  12|  12|                     array[k] = array[k-1]
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSort.py
+|  10| ················temp·=·array[toputinplace]
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|   7|   7| 	for toputinplace in range(1, len(array)):
+|   8|   8| 		for traverse in range(toputinplace):
+|   9|   9| 			if array[traverse] > array[toputinplace]:
+|  10|    |-                temp = array[toputinplace]
+|    |  10|+				temp = array[toputinplace]
+|  11|  11|                 for k in range(toputinplace, traverse, -1):
+|  12|  12|                     array[k] = array[k-1]
+|  13|  13|                 array[traverse] = temp
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSort.py
+|  11| ················for·k·in·range(toputinplace,·traverse,·-1):
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|   8|   8| 		for traverse in range(toputinplace):
+|   9|   9| 			if array[traverse] > array[toputinplace]:
+|  10|  10| 				temp = array[toputinplace]
+|  11|    |-                for k in range(toputinplace, traverse, -1):
+|    |  11|+				for k in range(toputinplace, traverse, -1):
+|  12|  12|                     array[k] = array[k-1]
+|  13|  13|                 array[traverse] = temp
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSort.py
+|  12| ····················array[k]·=·array[k-1]
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|   9|   9| 			if array[traverse] > array[toputinplace]:
+|  10|  10| 				temp = array[toputinplace]
+|  11|  11| 				for k in range(toputinplace, traverse, -1):
+|  12|    |-                    array[k] = array[k-1]
+|    |  12|+					array[k] = array[k-1]
+|  13|  13|                 array[traverse] = temp
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSort.py
+|  13| ················array[traverse]·=·temp
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/insertionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/insertionSort.py
+|  10|  10| 				temp = array[toputinplace]
+|  11|  11| 				for k in range(toputinplace, traverse, -1):
+|  12|  12| 					array[k] = array[k-1]
+|  13|    |-                array[traverse] = temp
+|    |  13|+				array[traverse] = temp
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+bubbleSort.py
+|   3| 
+|   4| def·bubbleSort(array):
+|   5| »   for·j·in·range·(len(array)):
+|   6| »   »   for·i·in·range·(len(array)-1-j):
+|   7| »   »   »   if·array[i]>array[i+1]:
+|   8| »   »   »   »   k·=·array[i];
+|   9| »   »   »   »   array[i]·=·array[i+1]
+|  10| »   »   »   »   array[i+1]·=·k
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +7 -6 in /Users/User/python-sorts/python_codes/bubbleSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+insertionSortR.py
+|   5| def·insertionSortR(array,n):
+|   6| »   if·(n==len(array)):
+|   7| »   »   return
+|   8| »   for·traverse·in·range(n):
+|   9| »   »   if·array[traverse]·>·array[n]:
+|  10| »   »   »   temp·=·array[n]
+|  11| »   »   »   for·k·in·range(n,·traverse,·-1):
+|  12| »   »   »   »   array[k]·=·array[k-1]
+|  13| »   »   »   array[traverse]·=·temp
+|  14| »   insertionSortR(array,n+1)
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +11 -10 in /Users/User/python-sorts/python_codes/insertionSortR.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+countingSort.py
+|   2| »   countarr·=·[]
+|   3| »   #Here·12·is·taken·assuming·no·element·will·be·larger.
+|   4| »   countarr·=·[0]*12
+|   5| »   for·i·in·range(len(array)):
+|   6| »   »   countarr[array[i]]+=1
+|   7| »   sum=0
+|   8| »   for·i·in·range(len(countarr)):
+|   9| »   »   sum·=·sum·+·countarr[i]
+|  10| »   »   countarr[i]=sum
+|  11| 
+|  12| »   ansarray·=·[]
+|  13| »   print(countarr)
+|  14| »   ansarray·=·[0]*len(array)
+|  15| »   for·i·in·range(len(array)):
+|  16| »   »   ·ansarray[·countarr[·array[i]·]·-1·]·=·array[i]
+|  17| »   return·ansarray
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +15 -15 in /Users/User/python-sorts/python_codes/countingSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+bubbleSortR.py
+|   4| def·bubbleSortR(array,end):
+|   5| »   if·(end==0):
+|   6| »   »   return
+|   7| »   for·i·in·range(0,end-1):
+|   8| »   »   if·(array[i]>array[i+1]):
+|   9| »   »   »   k=array[i]
+|  10| »   »   »   array[i]=array[i+1]
+|  11| »   »   »   array[i+1]=k
+|  12| »   bubbleSortR(array,end-1)
+|  13| »   
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +10 -10 in /Users/User/python-sorts/python_codes/bubbleSortR.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+bubbleSortR.py
+|  13| »   
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - No newline at EOF.
+|    | - Trailing whitespaces.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|   9| ····for·j·in·range(len(array)):
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|   6|   6| 
+|   7|   7| 
+|   8|   8| def selectionSort(array):
+|   9|    |-    for j in range(len(array)):
+|    |   9|+	for j in range(len(array)):
+|  10|  10|         minimum_pos = j
+|  11|  11|         for i in range(j+1, len(array)):
+|  12|  12|             if array[i] < array[minimum_pos]:
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  10| ········minimum_pos·=·j
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|   7|   7| 
+|   8|   8| def selectionSort(array):
+|   9|   9| 	for j in range(len(array)):
+|  10|    |-        minimum_pos = j
+|    |  10|+		minimum_pos = j
+|  11|  11|         for i in range(j+1, len(array)):
+|  12|  12|             if array[i] < array[minimum_pos]:
+|  13|  13|                 minimum_pos = i
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  11| ········for·i·in·range(j+1,·len(array)):
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|   8|   8| def selectionSort(array):
+|   9|   9| 	for j in range(len(array)):
+|  10|  10| 		minimum_pos = j
+|  11|    |-        for i in range(j+1, len(array)):
+|    |  11|+		for i in range(j+1, len(array)):
+|  12|  12|             if array[i] < array[minimum_pos]:
+|  13|  13|                 minimum_pos = i
+|  14|  14|         k = array[j]
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  12| ············if·array[i]·<·array[minimum_pos]:
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|   9|   9| 	for j in range(len(array)):
+|  10|  10| 		minimum_pos = j
+|  11|  11| 		for i in range(j+1, len(array)):
+|  12|    |-            if array[i] < array[minimum_pos]:
+|    |  12|+			if array[i] < array[minimum_pos]:
+|  13|  13|                 minimum_pos = i
+|  14|  14|         k = array[j]
+|  15|  15|         array[j] = array[minimum_pos]
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  13| ················minimum_pos·=·i
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|  10|  10| 		minimum_pos = j
+|  11|  11| 		for i in range(j+1, len(array)):
+|  12|  12| 			if array[i] < array[minimum_pos]:
+|  13|    |-                minimum_pos = i
+|    |  13|+				minimum_pos = i
+|  14|  14|         k = array[j]
+|  15|  15|         array[j] = array[minimum_pos]
+|  16|  16|         array[minimum_pos] = k
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  14| ········k·=·array[j]
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|  11|  11| 		for i in range(j+1, len(array)):
+|  12|  12| 			if array[i] < array[minimum_pos]:
+|  13|  13| 				minimum_pos = i
+|  14|    |-        k = array[j]
+|    |  14|+		k = array[j]
+|  15|  15|         array[j] = array[minimum_pos]
+|  16|  16|         array[minimum_pos] = k
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  15| ········array[j]·=·array[minimum_pos]
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|  12|  12| 			if array[i] < array[minimum_pos]:
+|  13|  13| 				minimum_pos = i
+|  14|  14| 		k = array[j]
+|  15|    |-        array[j] = array[minimum_pos]
+|    |  15|+		array[j] = array[minimum_pos]
+|  16|  16|         array[minimum_pos] = k
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+selectionSort.py
+|  16| ········array[minimum_pos]·=·k
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Spaces used instead of tabs.
+|----|    | /Users/User/python-sorts/python_codes/selectionSort.py
+|    |++++| /Users/User/python-sorts/python_codes/selectionSort.py
+|  13|  13| 				minimum_pos = i
+|  14|  14| 		k = array[j]
+|  15|  15| 		array[j] = array[minimum_pos]
+|  16|    |-        array[minimum_pos] = k
+|    |  16|+		array[minimum_pos] = k
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+heapSort.py
+|   1| def·maxheapify·(array):
+|   2| »   i·=·int(len(array)/2)
+|   3| »   while·(i>=0):
+|   4| »   »   leftchild·=·(2*i)+1
+|   5| »   »   rightchild·=·(2*i)+2
+|   6| »   »   if·(leftchild<len(array)·and·array[i]<array[leftchild]):
+|   7| »   »   »   temp·=·array[i]
+|   8| »   »   »   array[i]·=·array[leftchild]
+|   9| »   »   »   array[leftchild]·=·temp
+|  10| »   »   if·(rightchild<len(array)·and·array[i]<array[rightchild]):
+|  11| »   »   »   temp·=·array[i]
+|  12| »   »   »   array[i]·=·array[rightchild]
+|  13| »   »   »   array[rightchild]·=·temp
+|  14| »   »   i·=·i-1
+|  15| »   »   print(array)
+|  16| »   return·array
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +16 -16 in /Users/User/python-sorts/python_codes/heapSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+heapSort.py
+|  19| def·heapSort·(array):
+|  20| »   maxheapify(array)
+|  21| »   i·=·len(array)-1
+|  22| 
+|  23| »   while(i>=1):
+|  24| »   »   print(array)
+|  25| »   »   temp·=·array[0]·
+|  26| »   »   array[0]·=·array[i]
+|  27| »   »   array[i]·=·temp
+|  28| »   »   array[0:i]·=·maxheapify(array[0:i])
+|  29| »   »   i·=·i·-·1
+|  30| 
+|  31| »   print(array)
+|  32| 
+|  33| 
+|  34| 
+|  35| 
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +11 -15 in /Users/User/python-sorts/python_codes/heapSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+heapSort.py
+|  25| »   »   temp·=·array[0]·
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Trailing whitespaces.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+Your source code contains trailing whitespaces. Those usually have no meaning. Please consider removing them.
+|    | The action was executed successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+radixSort.py
+|   1| def·countingSortRadix(array,exp):
+|   2| »   countarr·=·[]
+|   3| »   #Here·12·is·taken·assuming·no·element·will·be·larger.
+|   4| »   countarr·=·[0]*10
+|   5| »   for·i·in·range(len(array)):
+|   6| »   »   pos·=·int((array[i]/exp)%10)
+|   7| »   »   countarr[pos]+=1
+|   8| »   sum=0
+|   9| 
+|  10| »   for·i·in·range(len(countarr)):
+|  11| »   »   sum·=·sum·+·countarr[i]
+|  12| »   »   countarr[i]=sum
+|  13| 
+|  14| »   ansarray·=·[]
+|  15| »   ansarray·=·[0]*len(array)
+|  16| »   i=len(array)-1
+|  17| »   while·(i>=0):
+|  18| »   »   pos·=·int((array[i]/exp)%10)
+|  19| »   »   ansarray[·countarr[·pos·]·-1·]·=·array[i]
+|  20| »   »   countarr[·pos·]·-=·1
+|  21| »   »   i·-=·1
+|  22| »   return·ansarray
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +21 -20 in /Users/User/python-sorts/python_codes/radixSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+radixSort.py
+|  25| »   for·i·in·range(3):
+|  26| »   »   array·=·countingSortRadix(array,10**(i))
+|  27| »   print·(array)
+|  28| »   return·array
+|  29| »   »   
+|  30| 
+|  31| 
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +4 -7 in /Users/User/python-sorts/python_codes/radixSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+radixSort.py
+|  29| »   »   
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Trailing whitespaces.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+mergeSort.py
+|   1| def·merge(array1,array2):
+|   2| »   i·=·0
+|   3| »   j·=·0
+|   4| »   array·=·[]
+|   5| »   while·(i<len(array1)·and·j<len(array2)):
+|   6| »   »   if·(array1[i]<array2[j]):
+|   7| »   »   »   array.append(array1[i])
+|   8| »   »   »   i+=1
+|   9| »   »   else:
+|  10| »   »   »   array.append(array2[j])
+|  11| »   »   »   j+=1
+|  12| »   while·(i<len(array1)):
+|  13| »   »   array.append(array1[i])
+|  14| »   »   i+=1
+|  15| »   while·(j<len(array2)):
+|  16| »   »   array.append(array2[j])
+|  17| »   »   j+=1
+|  18| »   return·array
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +19 -18 in /Users/User/python-sorts/python_codes/mergeSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+mergeSort.py
+|  21| »   if·(len(array)==1):
+|  22| »   »   return·array
+|  23| »   half·=·int(len(array)/2)
+|  24| »   length·=·int(len(array))
+|  25| »   return·merge·(·mergeSort(·array[0:half]·),·mergeSort(·array[half:length]·)·)
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +5 -5 in /Users/User/python-sorts/python_codes/mergeSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+quickSort.py
+|   1| def·merge(array1,array2):
+|   2| »   i·=·0
+|   3| »   j·=·0
+|   4| »   array·=·[]
+|   5| »   while·(i<len(array1)·and·j<len(array2)):
+|   6| »   »   if·(array1[i]<array2[j]):
+|   7| »   »   »   array.append(array1[i])
+|   8| »   »   »   i+=1
+|   9| »   »   else:
+|  10| »   »   »   array.append(array2[j])
+|  11| »   »   »   j+=1
+|  12| »   while·(i<len(array1)):
+|  13| »   »   array.append(array1[i])
+|  14| »   »   i+=1
+|  15| »   while·(j<len(array2)):
+|  16| »   »   array.append(array2[j])
+|  17| »   »   j+=1
+|  18| »   return·array
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +19 -18 in /Users/User/python-sorts/python_codes/quickSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+quickSort.py
+|  21| »   if·(len(array)<=1):
+|  22| »   »   return·array
+|  23| »   array1·=·[]
+|  24| »   array2·=·[]
+|  25| »   pivot·=·array[int(len(array))-1]
+|  26| 
+|  27| »   #Calling·merge·on·the·two·broken·down·lists
+|  28| »   for·i·in·range·(len(array)-1):
+|  29| »   »   if·(array[i]<pivot):
+|  30| »   »   »   array1.append(array[i])
+|  31| »   »   else:
+|  32| »   »   »   array2.append(array[i])
+|  33| »   quickSorted1·=·quickSort(array1)
+|  34| »   quickSorted2·=·quickSort(array2)
+|  35| »   arraytemp·=·merge(quickSorted1,quickSorted2)
+|  36| 
+|  37| »   #Ensuring·pivot·is·added·in·between
+|  38| »   pivotpos·=·len(quickSorted1)
+|  39| »   arrayans·=·[]
+|  40| »   for·i·in·range(len(arraytemp)):
+|  41| »   »   if·(i==pivotpos):
+|  42| »   »   »   arrayans.append(pivot)
+|  43| »   »   arrayans.append(arraytemp[i])
+|  44| »   if·(pivotpos==len(arraytemp)):
+|  45| »   »   arrayans.append(pivot)
+|  46| 
+|  47| »   return·arrayans
+|  48| 
+|  49| 
+|  50| 
+|  51| »   »   
+|  52| »   »   
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +24 -29 in /Users/User/python-sorts/python_codes/quickSort.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+quickSort.py
+|  51| »   »   
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Trailing whitespaces.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+quickSort.py
+|  52| »   »   
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - Trailing whitespaces.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+testSorting.py
+|  13| class·Test(·unittest.TestCase·):
+|  14| »   def·testSelectionSort(·self·):
+|  15| »   »   A·=·[5,1,3,0,10]
+|  16| »   »   selectionSort.selectionSort(·A·)
+|  17| »   »   B·=·[0,1,3,5,10]
+|  18| »   »   if·(A!=B):
+|  19| »   »   »   self.fail(·"selectionSort·method·fails."·)
+|  20| 
+|  21| »   def·testBubbleSort(·self·):
+|  22| »   »   A·=·[5,1,3,0,10]
+|  23| »   »   bubbleSort.bubbleSort(·A·)
+|  24| »   »   B·=·[0,1,3,5,10]
+|  25| »   »   if·(A!=B):
+|  26| »   »   »   self.fail(·"bubbleSort·method·fails."·)
+|  27| 
+|  28| »   def·testBubbleSortR(·self·):
+|  29| »   »   A·=·[5,1,3,0,10]
+|  30| »   »   bubbleSortR.bubbleSortR(·A·,·len(A))
+|  31| »   »   B·=·[0,1,3,5,10]
+|  32| »   »   if·(A!=B):
+|  33| »   »   »   self.fail(·"bubbleSortR·method·fails."·)
+|  34| 
+|  35| »   def·testInsertionSort(self):
+|  36| »   »   A·=·[5,1,3,0,10]
+|  37| »   »   insertionSort.insertionSort(·A·)
+|  38| »   »   B·=·[0,1,3,5,10]
+|  39| »   »   if·(A!=B):
+|  40| »   »   »   self.fail("insertionSort·method·fails.")
+|  41| 
+|  42| »   def·testInsertionSortR(self):
+|  43| »   »   A·=·[5,1,3,0,10]
+|  44| »   »   insertionSortR.insertionSortR(·A·,·0·)
+|  45| »   »   B·=·[0,1,3,5,10]
+|  46| »   »   if·(A!=B):
+|  47| »   »   »   self.fail("insertionSortR·method·fails.")
+|  48| 
+|  49| »   def·testMergeSort(·self·):
+|  50| »   »   A·=·[5,1,3,0,10]
+|  51| »   »   new·=·mergeSort.mergeSort(·A·)
+|  52| »   »   B·=·[0,1,3,5,10]
+|  53| »   »   if·(new!=B):
+|  54| »   »   »   self.fail(·"mergeSort·method·fails."·)
+|  55| 
+|  56| »   def·testQuickSort(·self·):
+|  57| »   »   A·=·[5,1,3,0,10]
+|  58| »   »   new·=·quickSort.quickSort(·A·)
+|  59| »   »   B·=·[0,1,3,5,10]
+|  60| »   »   if·(new!=B):
+|  61| »   »   »   self.fail(·"quickSort·method·fails."·)
+|  62| 
+|  63| »   def·testCountingSort(self):
+|  64| »   »   A·=·[5,1,3,0,10]
+|  65| »   »   new·=·countingSort.countingSort(·A·)
+|  66| »   »   B·=·[0,1,3,5,10]
+|  67| »   »   if·(new!=B):
+|  68| »   »   »   self.fail("countingSort·method·fails.")
+|  69| 
+|  70| »   def·testRadixSort(self):
+|  71| »   »   A·=·[513,124,333,101,666]
+|  72| »   »   new·=·radixSort.radixSort(·A·)
+|  73| »   »   B·=·[101,·124,·333,·513,·666]
+|  74| »   »   if·(new!=B):
+|  75| »   »   »   self.fail("radixSort·method·fails.")
+|  76| 
+|  77| »   def·testHeapSort(self):
+|  78| »   »   A·=·[5,1,3,0,10]
+|  79| »   »   heapSort.heapSort(·A·)
+|  80| »   »   B·=·[0,1,3,5,10]
+|  81| »   »   if·(A!=B):
+|  82| »   »   »   self.fail("heapSort·method·fails.")
+|  83| 
+|  84| »   »   
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|    | +61 -62 in /Users/User/python-sorts/python_codes/testSorting.py
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Show patch
+|    |  4: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 2
+|    | Patch applied successfully.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+
+testSorting.py
+|  84| »   »   
+|    | [NORMAL] SpaceConsistencyBear:
+|    | Line contains following spacing inconsistencies:
+|    | - No newline at EOF.
+|    | - Trailing whitespaces.
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Print more info
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 0
+Users-MacBook-Pro:python_codes User$ 

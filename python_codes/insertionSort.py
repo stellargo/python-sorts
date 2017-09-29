@@ -4,10 +4,10 @@
 
 
 def insertionSort(array):
-    for toputinplace in range(1, len(array)):
-        for traverse in range(toputinplace):
-            if array[traverse] > array[toputinplace]:
-                temp = array[toputinplace]
-                for k in range(toputinplace, traverse, -1):
-                    array[k] = array[k-1]
-                array[traverse] = temp
+	for toputinplace in range(1, len(array)):
+		for traverse in range(toputinplace):
+			if array[traverse] > array[toputinplace]:
+				temp = array[toputinplace]
+				for k in range(toputinplace, traverse, -1):
+					array[k] = array[k-1]
+				array[traverse] = temp
